@@ -1,1 +1,25 @@
-/*  your css code here. If applicable */
+#container {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+#container::before {
+  content: "Before Element ";
+  color: #f00;
+  font-size: 20px;
+  font-weight: bold;
+ /* display: inline;  Ensures content is on the same line */
+}
+
+#container::after {
+  content: " After Element";
+  color: #f00;
+  font-size: 20px;
+  font-weight: bold;
+  /* display: inline;  Ensures content is on the same line */
+}
